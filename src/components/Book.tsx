@@ -11,7 +11,7 @@ interface Props {
   >["switchBookShelf"];
 }
 const Book: React.FC<Props> = ({ book, onUpdateBookShelf }) => {
-  const backgroundImage = book.imageLinks.thumbnail
+  const backgroundImage = book.imageLinks?.thumbnail
     ? `url(${book.imageLinks.thumbnail})`
     : "";
   return (

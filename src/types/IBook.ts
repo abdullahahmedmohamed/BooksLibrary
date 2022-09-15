@@ -23,7 +23,7 @@ export interface ImageLinks {
 export default interface IBook {
   title: string;
   subtitle: string;
-  authors: string[];
+  authors?: string[];
   publisher: string;
   publishedDate: string;
   description: string;
@@ -38,7 +38,7 @@ export default interface IBook {
   allowAnonLogging: boolean;
   contentVersion: string;
   panelizationSummary: PanelizationSummary;
-  imageLinks: ImageLinks;
+  imageLinks?: ImageLinks;
   language: string;
   previewLink: string;
   infoLink: string;

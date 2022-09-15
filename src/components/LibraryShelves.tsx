@@ -5,10 +5,6 @@ import { useBooksContext } from "../utils/BooksContext";
 
 const LibraryShelves: React.FC = () => {
   const { booksByShelf, isLoading } = useBooksContext()!;
-  console.log({
-    booksByShelf,
-    isLoading,
-  });
 
   if (isLoading) {
     return <Loading />;
